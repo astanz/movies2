@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     
     var movies = [Movie]()
+    var valueToPass: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +36,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         do {
             let results = try context.executeFetchRequest(fetchRequest)
             self.movies = results as! [Movie]
-            print("LOAD: Index Count=\(movies.count)")
         } catch let err as NSError {
             print("LOAD ERROR: \(err.description)")
         }
@@ -53,7 +53,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print ("movies.count = \(movies.count)")
         return movies.count
     }
     
@@ -61,7 +60,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return 1
     }
     
-
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("You selected cell #\(indexPath.row)")
+        
+        valueToPass = indexPath.row
+        performSegueWithIdentifier("segueDetailRecord", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "segueDetailRecord") {
+            
+            // initialize new view controller and cast it as a view controller
+            let viewController = segue.destinationViewController as! DetailVC
+            viewController.passedValue = valueToPass
+        }
+    }
 
 }
 

@@ -17,6 +17,7 @@
 		8454BF961BF9B4950060B877 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454BF941BF9B4950060B877 /* Movie.swift */; };
 		8454BF981BF9C29A0060B877 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454BF971BF9C29A0060B877 /* MovieCell.swift */; };
 		8454BF9A1BFB81580060B877 /* CreateMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8454BF991BFB81580060B877 /* CreateMovieVC.swift */; };
+		84A61C9C1BFE2F840064BF22 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A61C9B1BFE2F840064BF22 /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8454BF941BF9B4950060B877 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movie.swift; path = ../Movie.swift; sourceTree = "<group>"; };
 		8454BF971BF9C29A0060B877 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		8454BF991BFB81580060B877 /* CreateMovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMovieVC.swift; sourceTree = "<group>"; };
+		84A61C9B1BFE2F840064BF22 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				8454BF991BFB81580060B877 /* CreateMovieVC.swift */,
+				84A61C9B1BFE2F840064BF22 /* DetailVC.swift */,
 				8454BF931BF9B4950060B877 /* Movie+CoreDataProperties.swift */,
 				8454BF941BF9B4950060B877 /* Movie.swift */,
 			);
@@ -179,6 +182,7 @@
 				8454BF981BF9C29A0060B877 /* MovieCell.swift in Sources */,
 				8454BF9A1BFB81580060B877 /* CreateMovieVC.swift in Sources */,
 				8454BF841BF96AEA0060B877 /* movies2.xcdatamodeld in Sources */,
+				84A61C9C1BFE2F840064BF22 /* DetailVC.swift in Sources */,
 				8454BF7C1BF96AEA0060B877 /* AppDelegate.swift in Sources */,
 				8454BF961BF9B4950060B877 /* Movie.swift in Sources */,
 			);
@@ -330,6 +334,7 @@
 				8454BF8F1BF96AEA0060B877 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

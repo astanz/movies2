@@ -27,7 +27,6 @@ class MovieCell: UITableViewCell {
 //    }
     
     func configureCell(movie: Movie) {
-        print("config cell called, title=\(movie.title)")
         movieTitle.text = movie.title
         movieDescrip.text = movie.descrip
         movieLink.text = movie.link
