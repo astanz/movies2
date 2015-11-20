@@ -82,8 +82,6 @@
 		8454BF901BF9B3FE0060B877 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8454BF991BFB81580060B877 /* CreateMovieVC.swift */,
-				84A61C9B1BFE2F840064BF22 /* DetailVC.swift */,
 				8454BF931BF9B4950060B877 /* Movie+CoreDataProperties.swift */,
 				8454BF941BF9B4950060B877 /* Movie.swift */,
 			);
@@ -101,6 +99,8 @@
 		8454BF921BF9B40A0060B877 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				84A61C9B1BFE2F840064BF22 /* DetailVC.swift */,
+				8454BF991BFB81580060B877 /* CreateMovieVC.swift */,
 				8454BF7D1BF96AEA0060B877 /* ViewController.swift */,
 			);
 			name = Controller;

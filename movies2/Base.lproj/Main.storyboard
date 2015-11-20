@@ -74,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Baf-9j-l4o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1680" y="702"/>
+            <point key="canvasLocation" x="1736" y="708"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -151,7 +151,6 @@
                                             <outlet property="movieImg" destination="CIs-g7-ZlM" id="qTf-OJ-b3n"/>
                                             <outlet property="movieLink" destination="ukU-wt-9kK" id="nOg-M7-HTq"/>
                                             <outlet property="movieTitle" destination="eWI-v3-oSl" id="r9C-UQ-HAx"/>
-                                            <segue destination="pol-jv-3Ir" kind="show" identifier="segueDetailRecord" id="0Wl-Te-a1N"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -175,6 +174,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="g4l-jj-stf" id="igq-s2-Aq1"/>
+                        <segue destination="pol-jv-3Ir" kind="show" identifier="segueDetailRecord" id="i2o-VU-qJh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
